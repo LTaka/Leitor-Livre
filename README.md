@@ -18,6 +18,6 @@ No Linux, instale `python3` e `espeak` e, na pasta extraída deste projeto, exec
 No Windows, execute `integracao/windows-instalar.ps1` no PowerShell com o ID da extensão. WAV funciona sem FFmpeg; para MP3, instale FFmpeg.
 
 ## Atualizar
-Extraia o ZIP. Em chrome://extensions ou edge://extensions, remova ou desative a versão anterior. Ative modo do desenvolvedor > Carregar sem compactação > escolha `leitor-livre-3-8/extensao`. Recarregue as páginas já abertas.
+Extraia o ZIP. Em chrome://extensions ou edge://extensions, remova ou desative a versão anterior. Ative modo do desenvolvedor > Carregar sem compactação > escolha `./extensao`. Recarregue as páginas já abertas.
 
 A funcionalidade no navegador ainda precisa ser testada em Chrome/Edge reais; as verificações incluídas são de sintaxe e integridade de arquivos.
