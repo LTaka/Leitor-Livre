@@ -1,0 +1,1 @@
+document.querySelector('#open').onclick=async()=>{try{const [tab]=await chrome.tabs.query({active:true,currentWindow:true});await chrome.sidePanel.open({windowId:tab.windowId});window.close()}catch(e){document.querySelector('#status').textContent=e.message}};

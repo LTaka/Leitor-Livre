@@ -1,0 +1,45 @@
+(()=>{'use strict';if(window.__leitorLivre)return;window.__leitorLivre=true;
+let lastShortcut=0;let cfg={enabled:false,rate:1.5,pitch:1,volume:1,voiceURI:''},items=[],at=0,run=0,paused=false,active=false,panel=null,phrase=null,progress=null,button=null,last=null,timer;
+const synth=speechSynthesis,hilite='leitor-livre-current';
+function selection(){const s=getSelection();if(!s||s.isCollapsed||!s.rangeCount||!s.toString().trim())return null;const r=s.getRangeAt(0).cloneRange();if(r.startContainer.parentElement?.closest('input,textarea,[contenteditable],#leitor-livre-ui'))return null;const nodes=[];const root=r.commonAncestorContainer;function put(n){if(!n.nodeValue||!r.intersectsNode(n))return;const a=n===r.startContainer?r.startOffset:0,b=n===r.endContainer?r.endOffset:n.length;if(b>a)nodes.push({node:n,a,b,len:b-a})}if(root.nodeType===3)put(root);else{const w=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);let n;while(n=w.nextNode())put(n)}const text=nodes.map(n=>n.node.nodeValue.slice(n.a,n.b)).join('');return text.trim()?{nodes,text}:null}
+function range(nodes,a,b){let offset=0,first,last;for(const n of nodes){const right=offset+n.len;if(a<right&&b>offset){if(!first)first={node:n.node,o:n.a+Math.max(0,a-offset)};last={node:n.node,o:n.a+Math.min(n.len,b-offset)}}offset=right}if(!first)return null;try{const r=document.createRange();r.setStart(first.node,first.o);r.setEnd(last.node,last.o);return r}catch{return null}}
+function segments(data){let raw=data.text,parts=[];if(Intl.Segmenter){try{parts=[...new Intl.Segmenter('pt-BR',{granularity:'sentence'}).segment(raw)].map(x=>[x.index,x.index+x.segment.length])}catch{}}if(!parts.length){let m;const re=/[^.!?\n]+(?:[.!?]+|\n|$)/g;while(m=re.exec(raw))parts.push([m.index,re.lastIndex])}let out=[];for(let [a,b] of parts){while(a<b&&/\s/.test(raw[a]))a++;while(b>a&&/\s/.test(raw[b-1]))b--;while(b-a>230){let end=raw.lastIndexOf(' ',a+230);if(end<a+70)end=a+230;out.push({text:raw.slice(a,end),range:range(data.nodes,a,end)});a=end;while(a<b&&/\s/.test(raw[a]))a++}if(b>a)out.push({text:raw.slice(a,b),range:range(data.nodes,a,b)})}return out.filter(x=>x.text.trim())}
+function clear(){if(CSS.highlights)CSS.highlights.delete(hilite)}
+function marker(r){clear();if(CSS.highlights&&window.Highlight&&r){CSS.highlights.set(hilite,new Highlight(r));if(!document.getElementById('leitor-livre-style')){const st=document.createElement('style');st.id='leitor-livre-style';st.textContent='::highlight(leitor-livre-current){background:#ffe17a;color:#251a00}';document.head.append(st)}}}
+function scroll(r){if(!r)return;let bounds=r.getBoundingClientRect();const y=(bounds.top+bounds.bottom)/2;let p=r.startContainer.parentElement;while(p&&p!==document.documentElement){const cs=getComputedStyle(p);if(/auto|scroll/.test(cs.overflowY)&&p.scrollHeight>p.clientHeight+6){const rect=p.getBoundingClientRect();const target=rect.top+rect.height*.48;if(Math.abs(y-target)>rect.height*.13)p.scrollBy({top:y-target,behavior:'smooth'});return}p=p.parentElement}const target=innerHeight*.48;if(Math.abs(y-target)>innerHeight*.13)window.scrollBy({top:y-target,behavior:'smooth'})}
+function widget(){if(panel)return;const host=document.createElement('div');host.id='leitor-livre-ui';host.style.cssText='position:fixed;right:15px;bottom:15px;z-index:2147483647';document.documentElement.append(host);panel=host.attachShadow({mode:'open'});panel.innerHTML=`<style>section{box-sizing:border-box;width:330px;max-width:calc(100vw - 30px);border-radius:17px;padding:16px;background:#153b35;color:white;box-shadow:0 10px 35px #0006;font:14px/1.5 system-ui}button{background:#e7f3ed;color:#16463d;border:0;border-radius:8px;padding:8px 10px;cursor:pointer}header,nav{display:flex;align-items:center;justify-content:space-between;gap:7px;margin-top:12px}nav button{font-size:12px}button:hover{filter:brightness(.94)}p{background:#285148;border-radius:8px;padding:10px;max-height:98px;overflow:auto;overflow-wrap:anywhere}small{color:#bed8ce}</style><section><header><strong>◖)) Leitor Livre</strong><button id="close">×</button></header><p id="phrase"></p><small id="progress"></small><nav><button id="back" title="Trecho anterior">⏮ Anterior</button><button id="pause">Pausar</button><button id="next" title="Próximo trecho">Próximo ⏭</button></nav></section>`;phrase=panel.getElementById('phrase');progress=panel.getElementById('progress');button=panel.getElementById('pause');panel.getElementById('close').onclick=()=>{stop();host.remove();panel=null};panel.getElementById('back').onclick=()=>jump(-1);panel.getElementById('next').onclick=()=>jump(1);button.onclick=toggle}
+function ui(){if(!panel)return;phrase.textContent=items[at]?.text||'Selecione texto para iniciar.';progress.textContent=items.length?`Frase ${Math.min(at+1,items.length)} de ${items.length}`:'Aguardando texto';button.textContent=paused?'Continuar':'Pausar'}
+function stop(){run++;synth.cancel();items=[];at=0;active=false;paused=false;clear();ui()}
+function speak(i){const id=++run;synth.cancel();at=i;active=true;paused=false;widget();ui();const item=items[at];marker(item.range);scroll(item.range);const u=new SpeechSynthesisUtterance(item.text);u.rate=cfg.rate;u.pitch=cfg.pitch;u.volume=cfg.volume;const v=synth.getVoices().find(v=>v.voiceURI===cfg.voiceURI)||synth.getVoices().find(v=>v.lang.toLowerCase()==='pt-br');if(v)u.voice=v;u.lang=v?.lang||'pt-BR';u.onend=()=>{if(run!==id)return;if(at+1<items.length)speak(at+1);else{active=false;clear();progress.textContent='Leitura concluída'}};u.onerror=e=>{if(run===id&&!['interrupted','canceled'].includes(e.error)){active=false;progress.textContent='Erro de voz: '+e.error+'. Tente outra voz na aba Personalizar voz.'}};synth.speak(u)}
+function read(){const s=selection();if(!s){const field=document.activeElement;if(field&&/^(INPUT|TEXTAREA)$/.test(field.tagName)&&typeof field.selectionStart==='number'){const raw=field.value.slice(field.selectionStart,field.selectionEnd);if(raw.trim()){last={text:raw,nodes:[]};stop();items=segments(last);if(items.length)speak(0);return !!items.length}}widget();phrase.textContent='Selecione um trecho na página antes de ler.';return false}last=s;stop();items=segments(s);if(items.length)speak(0);return !!items.length}
+// Reproduz o conteudo copiado, inclusive de input/textarea; sem limite fixo de caracteres.
+function readCopied(text){
+ if(!cfg.enabled||!text?.trim())return false;
+ const raw=text.trim();
+ // Usa os intervalos originais quando a copia coincide com a selecao.
+ const selected=selection();
+ const data=selected&&selected.text.trim()===raw?selected:{text:raw,nodes:[]};
+ stop();items=segments(data);if(items.length)speak(0);return !!items.length;
+}
+// O evento copy e disparado pelo gesto Ctrl+C ou menu Copiar em sites HTML comuns.
+// O texto pode ser alterado por scripts da pagina, por isso se usa a selecao e,
+// quando disponibilizado, o clipboardData depois da acao padrao.
+document.addEventListener('copy',e=>{
+ if(!cfg.enabled)return;
+ const el=document.activeElement;
+ let selected='';
+ if(el&&/^(INPUT|TEXTAREA)$/.test(el.tagName)&&typeof el.selectionStart==='number')selected=el.value.slice(el.selectionStart,el.selectionEnd);
+ if(!selected)selected=window.getSelection()?.toString()||'';
+ if(!selected.trim())return;
+ // Aguarda o evento de copia terminar para evitar interferir no Ctrl+C.
+ setTimeout(()=>readCopied(selected),0);
+},false);
+function toggle(){if(paused){synth.resume();paused=false;active=true}else if(active){synth.pause();paused=true}else if(items.length){speak(at);return}else{read();return}ui()}
+function jump(n){if(items.length)speak(Math.max(0,Math.min(items.length-1,at+n)))}
+function auto(){clearTimeout(timer);timer=setTimeout(()=>{if(cfg.enabled&&selection())read()},100)}
+// Atalho capturado diretamente na pagina: o gesto do usuario facilita a reproducao em alguns navegadores.
+document.addEventListener('keydown',e=>{if(!e.altKey||!e.shiftKey||e.ctrlKey||e.metaKey||e.code!=='KeyR')return;if(e.repeat)return;e.preventDefault();lastShortcut=Date.now();read();},true);
+document.addEventListener('mouseup',e=>{if(!e.target?.closest?.('#leitor-livre-ui')){const t=selection();if(t)last=t;if(cfg.enabled)auto()}},true);document.addEventListener('keyup',e=>{if(cfg.enabled&&['Shift','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Home','End'].includes(e.key))auto()},true);
+chrome.runtime.onMessage.addListener((m,_sender,reply)=>{if(m.type==='read-selection'||m.type==='read-selection-shortcut'){const hasText=!!selection();const allowed=cfg.enabled||m.type==='read-selection-shortcut';if(hasText&&allowed&&Date.now()-lastShortcut>650)read();reply({hasText,started:hasText&&allowed});}else if(m.type==='stop'){stop();reply({ok:true})}else if(m.type==='toggle-pause'){toggle();reply({ok:true})}return false});
+chrome.storage.local.get(cfg).then(s=>{Object.assign(cfg,s);if(!cfg.enabled)clearTimeout(timer)});chrome.storage.onChanged.addListener((changes,area)=>{if(area!=='local')return;for(const [k,v]of Object.entries(changes))if(k in cfg)cfg[k]=v.newValue;if(!cfg.enabled)clearTimeout(timer)});
+})();

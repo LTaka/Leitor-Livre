@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Leitor Livre — Painel de Leitura",
+  "version": "1.0",
+  "description": "Painel lateral com navegação por trechos e leitor flutuante clássico restaurado em páginas web.",
+  "permissions": [
+    "sidePanel",
+    "storage",
+    "nativeMessaging"
+  ],
+  "action": {
+    "default_title": "Abrir Leitor Livre",
+    "default_popup": "popup.html"
+  },
+  "side_panel": {
+    "default_path": "panel.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
