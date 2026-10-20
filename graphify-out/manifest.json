@@ -1,0 +1,62 @@
+{
+  "extensao/background.js": {
+    "mtime": 1792517542.8408487,
+    "ast_hash": "7ac3ecc924556017e6ae84e320ca5292",
+    "semantic_hash": ""
+  },
+  "extensao/content.js": {
+    "mtime": 1792517829.8441098,
+    "ast_hash": "32b87e2b5145affcd8d721c3884907a4",
+    "semantic_hash": ""
+  },
+  "extensao/manifest.json": {
+    "mtime": 1792517147.411904,
+    "ast_hash": "83e4fd0684e3837c587bdc3ee4d9a059",
+    "semantic_hash": ""
+  },
+  "extensao/panel.js": {
+    "mtime": 1792517542.8410838,
+    "ast_hash": "5f4d30b97e7d6e2b61e926eb176ff4a2",
+    "semantic_hash": ""
+  },
+  "extensao/pdf-extract.js": {
+    "mtime": 1792184390.0,
+    "ast_hash": "021f6877822ea4d0bcca1ad941be4e37",
+    "semantic_hash": ""
+  },
+  "extensao/popup.js": {
+    "mtime": 1792182604.0,
+    "ast_hash": "ab1831cddb98728d091110898ee3d3d4",
+    "semantic_hash": ""
+  },
+  "integracao/instalar.sh": {
+    "mtime": 1792251149.7930388,
+    "ast_hash": "fe50a703ad530f3f88d9affaa6d5657e",
+    "semantic_hash": ""
+  },
+  "integracao/native_host.py": {
+    "mtime": 1792251149.7120385,
+    "ast_hash": "0c6a545e3075da853489ce47a72f07c8",
+    "semantic_hash": ""
+  },
+  "integracao/windows-instalar.ps1": {
+    "mtime": 1792251280.6237633,
+    "ast_hash": "c163c14d184e97c7ade4b46e4d163de7",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1792258049.869422,
+    "ast_hash": "dac0aa5112ee8d6c15ac52a360641e25",
+    "semantic_hash": ""
+  },
+  "extensao/panel.html": {
+    "mtime": 1792517542.8423836,
+    "ast_hash": "b6cb1450a87d563b49a3439080eeeee3",
+    "semantic_hash": ""
+  },
+  "extensao/popup.html": {
+    "mtime": 1792182604.0,
+    "ast_hash": "6e3e8c741266a56e5c874cc9d8bfe302",
+    "semantic_hash": ""
+  }
+}

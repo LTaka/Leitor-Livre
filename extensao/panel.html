@@ -5,6 +5,7 @@
 </style></head><body>
 <header class="row"><div><h1>🎧 Leitor Livre</h1><div class="muted">Chrome e Edge · seu texto, no seu ritmo.</div></div><span class="muted">1.0</span></header>
 <section class="card row"><div><b>Leitura automática</b><div class="muted">Ativar nos sites comuns <span id="shortcut-hint"></span></div></div><input id="automatic" type="checkbox"></section>
+<section class="card row"><div><b>Continuar lendo</b><div class="muted">Novas seleções (automático, cópia, Alt + Shift + R, menu) entram no fim da leitura atual. Alt + Shift + A sempre acrescenta.</div></div><input id="append" type="checkbox"></section>
 <nav class="tabs"><button id="tab-text" class="active">Texto</button><button id="tab-pdf">PDF</button></nav>
 <section id="view-text" class="card"><div class="row text-header"><h2>Seu texto</h2><div class="text-actions"><button class="secondary" id="paste">Colar</button><button id="read-inline">▶ Ler</button></div></div><textarea id="text" placeholder="Cole ou escreva o texto para ouvir..."></textarea></section>
 <section id="view-pdf" class="card hidden"><h2>Importar PDF</h2><input id="file" type="file" accept=".pdf,application/pdf"><p class="muted">Importe seu PDF para ouvir o texto encontrado. PDFs digitalizados precisam de OCR.</p><p id="pdfstatus" class="muted"></p></section>

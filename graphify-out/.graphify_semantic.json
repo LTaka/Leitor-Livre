@@ -1,0 +1,220 @@
+{
+  "nodes": [
+    {
+      "id": "readme_leitor_livre",
+      "label": "Leitor Livre Extension",
+      "file_type": "document",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_leitura_automatica",
+      "label": "Automatic Page Reading",
+      "file_type": "concept",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_painel_lateral",
+      "label": "Side Panel Controls",
+      "file_type": "concept",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_exportacao_local",
+      "label": "Local Audio Export",
+      "file_type": "concept",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "readme_limite_voz_navegador",
+      "label": "Browser Voice Export Limitation",
+      "file_type": "rationale",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "Browser speechSynthesis voices can be played but their generated audio is not exposed for extension WAV or MP3 export."
+    },
+    {
+      "id": "extensao_panel_painel_lateral",
+      "label": "Side Panel Interface",
+      "file_type": "document",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/panel.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "extensao_panel_colar_texto",
+      "label": "Paste Text Action",
+      "file_type": "concept",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/panel.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "extensao_panel_reproducao",
+      "label": "Text Playback Controls",
+      "file_type": "concept",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/panel.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "extensao_panel_exportar_audio",
+      "label": "Audio Export Setup",
+      "file_type": "concept",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/panel.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "extensao_popup_abrir_painel_lateral",
+      "label": "Open Side Panel Action",
+      "file_type": "document",
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/popup.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "readme_leitor_livre",
+      "target": "readme_leitura_automatica",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_leitor_livre",
+      "target": "readme_painel_lateral",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_leitor_livre",
+      "target": "readme_exportacao_local",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_limite_voz_navegador",
+      "target": "readme_exportacao_local",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel_painel_lateral",
+      "target": "extensao_panel_colar_texto",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/panel.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel_painel_lateral",
+      "target": "extensao_panel_reproducao",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/panel.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel_painel_lateral",
+      "target": "extensao_panel_exportar_audio",
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/panel.html",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_painel_lateral",
+      "target": "extensao_panel_painel_lateral",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "readme_exportacao_local",
+      "target": "extensao_panel_exportar_audio",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_popup_abrir_painel_lateral",
+      "target": "extensao_panel_painel_lateral",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/linx/Documentos/www/Leitor-Livre/extensao/popup.html",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

@@ -1,0 +1,1204 @@
+{
+  "nodes": [
+    {
+      "id": "extensao_content",
+      "label": "content.js",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_selection",
+      "label": "selection()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_range",
+      "label": "range()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_segments",
+      "label": "segments()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_clear",
+      "label": "clear()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_marker",
+      "label": "marker()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_scroll",
+      "label": "scroll()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_widget",
+      "label": "widget()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_ui",
+      "label": "ui()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_stop",
+      "label": "stop()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_speak",
+      "label": "speak()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_read",
+      "label": "read()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_readcopied",
+      "label": "readCopied()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_toggle",
+      "label": "toggle()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L37",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_jump",
+      "label": "jump()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L38",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_content_auto",
+      "label": "auto()",
+      "file_type": "code",
+      "source_file": "extensao/content.js",
+      "source_location": "L39",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest",
+      "label": "manifest.json",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_manifest_version",
+      "label": "manifest_version",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L2",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_name",
+      "label": "name",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_version",
+      "label": "version",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L4",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_description",
+      "label": "description",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_permissions",
+      "label": "permissions",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_action",
+      "label": "action",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_action_default_title",
+      "label": "default_title",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L12",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_action_default_popup",
+      "label": "default_popup",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L13",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_side_panel",
+      "label": "side_panel",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L15",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_side_panel_default_path",
+      "label": "default_path",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_manifest_content_scripts",
+      "label": "content_scripts",
+      "file_type": "code",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L18",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel",
+      "label": "panel.js",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_split",
+      "label": "split()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_stop",
+      "label": "stop()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L6",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_paint",
+      "label": "paint()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L7",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_chosenvoice",
+      "label": "chosenVoice()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L8",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_next",
+      "label": "next()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L9",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_begin",
+      "label": "begin()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_jump",
+      "label": "jump()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L11",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_tab",
+      "label": "tab()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L14",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_refreshvoices",
+      "label": "refreshVoices()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L16",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_updateshortcut",
+      "label": "updateShortcut()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L19",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_updateaudioui",
+      "label": "updateAudioUI()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L22",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_panel_setupview",
+      "label": "setupView()",
+      "file_type": "code",
+      "source_file": "extensao/panel.js",
+      "source_location": "L24",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_pdf_extract",
+      "label": "pdf-extract.js",
+      "file_type": "code",
+      "source_file": "extensao/pdf-extract.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_pdf_extract_extractpdf",
+      "label": "extractPDF()",
+      "file_type": "code",
+      "source_file": "extensao/pdf-extract.js",
+      "source_location": "L3",
+      "_origin": "ast"
+    },
+    {
+      "id": "extensao_popup",
+      "label": "popup.js",
+      "file_type": "code",
+      "source_file": "extensao/popup.js",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integracao_instalar",
+      "label": "instalar.sh",
+      "file_type": "code",
+      "source_file": "integracao/instalar.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "integracao_instalar_sh__entry",
+      "label": "instalar.sh script",
+      "file_type": "code",
+      "source_file": "integracao/instalar.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast"
+    },
+    {
+      "id": "integracao_native_host",
+      "label": "native_host.py",
+      "file_type": "code",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L1",
+      "_origin": "ast"
+    },
+    {
+      "id": "integracao_native_host_answer",
+      "label": "answer()",
+      "file_type": "code",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L5",
+      "_origin": "ast"
+    },
+    {
+      "id": "integracao_native_host_main",
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L10",
+      "_origin": "ast"
+    },
+    {
+      "id": "integracao_windows_instalar",
+      "label": "windows-instalar.ps1",
+      "file_type": "code",
+      "source_file": "integracao/windows-instalar.ps1",
+      "source_location": "L1",
+      "_origin": "ast"
+    }
+  ],
+  "edges": [
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_selection",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_range",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_segments",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_clear",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_marker",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_scroll",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_widget",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_ui",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_stop",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_speak",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_read",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_readcopied",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_toggle",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_jump",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content",
+      "target": "extensao_content_auto",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_marker",
+      "target": "extensao_content_clear",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_widget",
+      "target": "extensao_content_stop",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_widget",
+      "target": "extensao_content_jump",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_stop",
+      "target": "extensao_content_clear",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_stop",
+      "target": "extensao_content_ui",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_speak",
+      "target": "extensao_content_widget",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_speak",
+      "target": "extensao_content_ui",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_speak",
+      "target": "extensao_content_marker",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_speak",
+      "target": "extensao_content_scroll",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_speak",
+      "target": "extensao_content_clear",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_read",
+      "target": "extensao_content_selection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_read",
+      "target": "extensao_content_stop",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_read",
+      "target": "extensao_content_segments",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_read",
+      "target": "extensao_content_speak",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_read",
+      "target": "extensao_content_widget",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_readcopied",
+      "target": "extensao_content_selection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_readcopied",
+      "target": "extensao_content_stop",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_readcopied",
+      "target": "extensao_content_segments",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_readcopied",
+      "target": "extensao_content_speak",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_toggle",
+      "target": "extensao_content_speak",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_toggle",
+      "target": "extensao_content_read",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_toggle",
+      "target": "extensao_content_ui",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_jump",
+      "target": "extensao_content_speak",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L38",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_auto",
+      "target": "extensao_content_selection",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_content_auto",
+      "target": "extensao_content_read",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/content.js",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest",
+      "target": "extensao_manifest_manifest_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest",
+      "target": "extensao_manifest_name",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest",
+      "target": "extensao_manifest_version",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest",
+      "target": "extensao_manifest_description",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest",
+      "target": "extensao_manifest_permissions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest_permissions",
+      "target": "ref_sidepanel",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "extensao_manifest_permissions",
+      "target": "ref_storage",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "extensao_manifest_permissions",
+      "target": "ref_nativemessaging",
+      "relation": "extends",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "context": "import"
+    },
+    {
+      "source": "extensao_manifest",
+      "target": "extensao_manifest_action",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest_action",
+      "target": "extensao_manifest_action_default_title",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest_action",
+      "target": "extensao_manifest_action_default_popup",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest",
+      "target": "extensao_manifest_side_panel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest_side_panel",
+      "target": "extensao_manifest_side_panel_default_path",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_manifest",
+      "target": "extensao_manifest_content_scripts",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/manifest.json",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_split",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_stop",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_paint",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_chosenvoice",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_next",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_begin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_jump",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_tab",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_refreshvoices",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_updateshortcut",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_updateaudioui",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel",
+      "target": "extensao_panel_setupview",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel_next",
+      "target": "extensao_panel_paint",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel_next",
+      "target": "extensao_panel_chosenvoice",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel_begin",
+      "target": "extensao_panel_stop",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel_begin",
+      "target": "extensao_panel_split",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_panel_jump",
+      "target": "extensao_panel_stop",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/panel.js",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "extensao_pdf_extract",
+      "target": "extensao_pdf_extract_extractpdf",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "extensao/pdf-extract.js",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_instalar",
+      "target": "integracao_instalar_sh__entry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/instalar.sh",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "json",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "struct",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "sys",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "subprocess",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "tempfile",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "shutil",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "pathlib",
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "integracao_native_host_answer",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host",
+      "target": "integracao_native_host_main",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "integracao_native_host_main",
+      "target": "integracao_native_host_answer",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "integracao/native_host.py",
+      "source_location": "L17",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

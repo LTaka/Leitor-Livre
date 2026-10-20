@@ -6,8 +6,13 @@
   "permissions": [
     "sidePanel",
     "storage",
+    "clipboardRead",
+    "contextMenus",
     "nativeMessaging"
   ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_title": "Abrir Leitor Livre",
     "default_popup": "popup.html"
