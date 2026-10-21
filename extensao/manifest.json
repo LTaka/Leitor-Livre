@@ -20,6 +20,15 @@
   "side_panel": {
     "default_path": "panel.html"
   },
+  "commands": {
+    "append-or-read-copied": {
+      "suggested_key": {
+        "default": "Alt+Shift+A",
+        "mac": "Command+Shift+A"
+      },
+      "description": "Acrescentar a seleção ou ler o texto copiado"
+    }
+  },
   "content_scripts": [
     {
       "matches": [

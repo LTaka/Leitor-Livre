@@ -1,0 +1,42 @@
+{
+  "background.js": {
+    "mtime": 1792623759.4453127,
+    "ast_hash": "987ab58c3cacd317774c7785cee59bb5",
+    "semantic_hash": ""
+  },
+  "content.js": {
+    "mtime": 1792625488.5502942,
+    "ast_hash": "e123f88958009dba364cdedf0721a9d0",
+    "semantic_hash": ""
+  },
+  "manifest.json": {
+    "mtime": 1792619093.5783446,
+    "ast_hash": "cdef7e19fd6040cc9211c5d0eed3f6e6",
+    "semantic_hash": ""
+  },
+  "panel.js": {
+    "mtime": 1792624859.6069477,
+    "ast_hash": "cfe185c48f153b1a1f850bc5e09e8cc6",
+    "semantic_hash": ""
+  },
+  "pdf-extract.js": {
+    "mtime": 1792184390.0,
+    "ast_hash": "021f6877822ea4d0bcca1ad941be4e37",
+    "semantic_hash": ""
+  },
+  "popup.js": {
+    "mtime": 1792625348.0613198,
+    "ast_hash": "eb80e7b1c1748a663b5e8839bc8509c9",
+    "semantic_hash": ""
+  },
+  "panel.html": {
+    "mtime": 1792624844.391009,
+    "ast_hash": "3ecb3011ede98d479e8b586a2c86a57f",
+    "semantic_hash": ""
+  },
+  "popup.html": {
+    "mtime": 1792625346.96525,
+    "ast_hash": "daa33d88d1b324b4263f848e587ee3bb",
+    "semantic_hash": ""
+  }
+}

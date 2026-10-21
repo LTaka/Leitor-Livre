@@ -1,0 +1,10 @@
+{
+  "0": "panel.js",
+  "1": "manifest.json",
+  "2": "content.js",
+  "3": "speak",
+  "4": "suggested_key",
+  "5": "background.js",
+  "7": "popup.js",
+  "9": "pdf-extract.js"
+}
