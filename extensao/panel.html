@@ -177,7 +177,9 @@ body.playing .pulse{background:var(--brand);animation:pulse 1.2s ease-in-out inf
 
     <div class="group-title row"><span>Voz</span><button class="link" id="reset-voice">Restaurar padrão</button></div>
     <div class="card">
-      <div class="field"><label for="voice">Voz</label><select id="voice"></select></div>
+      <div class="field"><label for="primary-lang">Idioma principal</label><select id="primary-lang"></select><p class="muted">Idioma de toda a leitura, sem detecção automática.</p></div>
+      <div class="field"><label for="secondary-lang">Segundo idioma (opcional)</label><select id="secondary-lang"></select><p class="muted">Se ativado, trechos nesse idioma usam uma voz dele. O resto continua no principal.</p></div>
+      <div class="field"><label for="voice">Voz preferida (idioma principal)</label><select id="voice"></select></div>
       <div class="field"><label for="rate">Velocidade <output id="rateVal">1.5×</output></label><input id="rate" type="range" min="0.5" max="2.5" step="0.1" value="1.5"><div class="scale"><span>Lenta</span><span>Rápida</span></div></div>
       <div class="field"><label for="pitch">Tom <output id="pitchVal">1.0</output></label><input id="pitch" type="range" min="0.5" max="2" step="0.1" value="1"><div class="scale"><span>Grave</span><span>Agudo</span></div></div>
       <div class="field"><label for="volume">Volume <output id="volumeVal">1.0</output></label><input id="volume" type="range" min="0" max="1" step="0.1" value="1"><div class="scale"><span>Mudo</span><span>Máximo</span></div></div>

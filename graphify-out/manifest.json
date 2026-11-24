@@ -1,22 +1,22 @@
 {
   "extensao/background.js": {
-    "mtime": 1792517542.8408487,
-    "ast_hash": "7ac3ecc924556017e6ae84e320ca5292",
+    "mtime": 1792623759.4453127,
+    "ast_hash": "987ab58c3cacd317774c7785cee59bb5",
     "semantic_hash": ""
   },
   "extensao/content.js": {
-    "mtime": 1792517829.8441098,
-    "ast_hash": "32b87e2b5145affcd8d721c3884907a4",
+    "mtime": 1795534360.8221693,
+    "ast_hash": "530f6977279bdc0800ee49df52fe922d",
     "semantic_hash": ""
   },
   "extensao/manifest.json": {
-    "mtime": 1792517147.411904,
-    "ast_hash": "83e4fd0684e3837c587bdc3ee4d9a059",
+    "mtime": 1792619093.5783446,
+    "ast_hash": "cdef7e19fd6040cc9211c5d0eed3f6e6",
     "semantic_hash": ""
   },
   "extensao/panel.js": {
-    "mtime": 1792517542.8410838,
-    "ast_hash": "5f4d30b97e7d6e2b61e926eb176ff4a2",
+    "mtime": 1795534364.0178816,
+    "ast_hash": "ff37d76cba533bbad8b27cbf392c5f42",
     "semantic_hash": ""
   },
   "extensao/pdf-extract.js": {
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "extensao/popup.js": {
-    "mtime": 1792182604.0,
-    "ast_hash": "ab1831cddb98728d091110898ee3d3d4",
+    "mtime": 1792625348.0613198,
+    "ast_hash": "eb80e7b1c1748a663b5e8839bc8509c9",
     "semantic_hash": ""
   },
   "integracao/instalar.sh": {
@@ -50,13 +50,13 @@
     "semantic_hash": ""
   },
   "extensao/panel.html": {
-    "mtime": 1792517542.8423836,
-    "ast_hash": "b6cb1450a87d563b49a3439080eeeee3",
+    "mtime": 1795534360.8232782,
+    "ast_hash": "7c06750d044c48ad0d6cc5132dd9149d",
     "semantic_hash": ""
   },
   "extensao/popup.html": {
-    "mtime": 1792182604.0,
-    "ast_hash": "6e3e8c741266a56e5c874cc9d8bfe302",
+    "mtime": 1792625346.96525,
+    "ast_hash": "daa33d88d1b324b4263f848e587ee3bb",
     "semantic_hash": ""
   }
 }

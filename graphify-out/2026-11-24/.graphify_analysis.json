@@ -1,0 +1,198 @@
+{
+  "communities": {
+    "0": [
+      "extensao_panel",
+      "extensao_panel_begin",
+      "extensao_panel_chosenvoice",
+      "extensao_panel_jump",
+      "extensao_panel_next",
+      "extensao_panel_paint",
+      "extensao_panel_refreshvoices",
+      "extensao_panel_setupview",
+      "extensao_panel_split",
+      "extensao_panel_stop",
+      "extensao_panel_tab",
+      "extensao_panel_updateaudioui",
+      "extensao_panel_updateshortcut"
+    ],
+    "1": [
+      "extensao_manifest",
+      "extensao_manifest_action",
+      "extensao_manifest_action_default_popup",
+      "extensao_manifest_action_default_title",
+      "extensao_manifest_content_scripts",
+      "extensao_manifest_description",
+      "extensao_manifest_manifest_version",
+      "extensao_manifest_name",
+      "extensao_manifest_permissions",
+      "extensao_manifest_side_panel",
+      "extensao_manifest_side_panel_default_path",
+      "extensao_manifest_version"
+    ],
+    "2": [
+      "extensao_panel_colar_texto",
+      "extensao_panel_exportar_audio",
+      "extensao_panel_painel_lateral",
+      "extensao_panel_reproducao",
+      "extensao_popup_abrir_painel_lateral",
+      "readme_exportacao_local",
+      "readme_leitor_livre",
+      "readme_leitura_automatica",
+      "readme_limite_voz_navegador",
+      "readme_painel_lateral"
+    ],
+    "3": [
+      "extensao_content",
+      "extensao_content_clear",
+      "extensao_content_marker",
+      "extensao_content_range",
+      "extensao_content_scroll",
+      "extensao_content_speak",
+      "extensao_content_toggle",
+      "extensao_content_ui"
+    ],
+    "4": [
+      "extensao_content_auto",
+      "extensao_content_read",
+      "extensao_content_readcopied",
+      "extensao_content_segments",
+      "extensao_content_selection",
+      "extensao_content_stop"
+    ],
+    "5": [
+      "integracao_native_host",
+      "integracao_native_host_answer",
+      "integracao_native_host_main"
+    ],
+    "6": [
+      "extensao_content_jump",
+      "extensao_content_widget"
+    ],
+    "7": [
+      "extensao_pdf_extract",
+      "extensao_pdf_extract_extractpdf"
+    ],
+    "8": [
+      "integracao_instalar",
+      "integracao_instalar_sh__entry"
+    ],
+    "9": [
+      "extensao_popup"
+    ],
+    "10": [
+      "integracao_windows_instalar"
+    ]
+  },
+  "cohesion": {
+    "0": 0.21794871794871795,
+    "1": 0.16666666666666666,
+    "2": 0.2222222222222222,
+    "3": 0.5,
+    "4": 0.5333333333333333,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "extensao_content_speak",
+      "label": "speak()",
+      "degree": 10
+    },
+    {
+      "id": "extensao_content_read",
+      "label": "read()",
+      "degree": 8
+    },
+    {
+      "id": "extensao_content_stop",
+      "label": "stop()",
+      "degree": 6
+    },
+    {
+      "id": "extensao_content_widget",
+      "label": "widget()",
+      "degree": 5
+    },
+    {
+      "id": "extensao_content_readcopied",
+      "label": "readCopied()",
+      "degree": 5
+    },
+    {
+      "id": "extensao_panel_painel_lateral",
+      "label": "Side Panel Interface",
+      "degree": 5
+    },
+    {
+      "id": "extensao_content_selection",
+      "label": "selection()",
+      "degree": 4
+    },
+    {
+      "id": "extensao_content_clear",
+      "label": "clear()",
+      "degree": 4
+    },
+    {
+      "id": "extensao_content_ui",
+      "label": "ui()",
+      "degree": 4
+    },
+    {
+      "id": "extensao_content_toggle",
+      "label": "toggle()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Side Panel Controls",
+      "target": "Side Panel Interface",
+      "source_files": [
+        "README.md",
+        "extensao/panel.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories; peripheral node `Side Panel Controls` unexpectedly reaches hub `Side Panel Interface`"
+    },
+    {
+      "source": "Local Audio Export",
+      "target": "Audio Export Setup",
+      "source_files": [
+        "README.md",
+        "extensao/panel.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "connects across different repos/directories"
+    },
+    {
+      "source": "Open Side Panel Action",
+      "target": "Side Panel Interface",
+      "source_files": [
+        "extensao/popup.html",
+        "extensao/panel.html"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `Open Side Panel Action` unexpectedly reaches hub `Side Panel Interface`"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `speak()` connect `Community 3` to `Community 4`, `Community 6`?",
+      "why": "High betweenness centrality (0.008) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `manifest_version`, `name`, `version` to the rest of the system?",
+      "why": "15 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}
